@@ -1,0 +1,7 @@
+[monitor:///var/log/myapp/app.json.log]
+index=NLAB_LOGS
+sourcetype=NLAB_JSON
+
+[monitor:///var/log/myapp/metrics.json.log]
+index=NLAB_METRICS
+sourcetype=NLAB_JSON

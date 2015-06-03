@@ -1,0 +1,5 @@
+[nlab]
+homePath   = $SPLUNK_DB/nlab/db
+coldPath   = $SPLUNK_DB/nlab/colddb
+thawedPath = $SPLUNK_DB/nlab/thaweddb
+

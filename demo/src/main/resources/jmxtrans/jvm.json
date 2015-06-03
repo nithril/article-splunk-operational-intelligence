@@ -1,0 +1,34 @@
+{
+  "queries": [
+    {
+
+      "objectName": "java.lang:type=Memory",
+      "resultAlias": "heap",
+      "attributes": [
+        "HeapMemoryUsage",
+        "NonHeapMemoryUsage"
+      ]
+    },
+    {
+
+      "objectName": "java.lang:type=Threading",
+      "resultAlias": "threads",
+      "attributes": [
+        "DaemonThreadCount",
+        "PeakThreadCount",
+        "ThreadCount",
+        "TotalStartedThreadCount"
+      ]
+    }
+    ],
+  "outputWriters": [
+    {
+      "@class": "org.nlab.splunk.article.jmxtrans.Slf4jWriter"
+    }
+  ],
+  "queryIntervalInSeconds": "5",
+  "numQueryThreads": "2",
+  "numExportThreads": "2",
+  "exportIntervalInSeconds": "5",
+  "exportBatchSize": "50"
+}
